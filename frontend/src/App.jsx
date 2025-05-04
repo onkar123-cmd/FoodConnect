@@ -26,7 +26,7 @@ import Feedback from './pages/Feedback'
 import Raise from './pages/Raise'
 
 const App = () => {
-  const url="https://food-connect-backend.vercel.app"
+  const url="http://localhost:4000"
   const [showLogin, setShowLogin] = useState(false)
   const [showLoginDonor, setShowLoginDonor]=useState(false)
   const [showLoginAdmin, setShowLoginAdmin]=useState(false)
