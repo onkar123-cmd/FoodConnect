@@ -18,7 +18,7 @@ const allowedOrigins=['https://food-connect-frontend.vercel.app']
 
 // middleware
 app.use(express.json())
-app.use(cors({origin: allowedOrigins, credentials: true})) // {origin: allowedOrigins, credentials: true}
+app.use(cors()) // {origin: allowedOrigins, credentials: true}
 
 // db connection
 connectDB();
@@ -32,7 +32,7 @@ app.use("/api/admin",adminRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 
-app.get("https://food-connect-backend.vercel.app",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("API Working")
 })
 
