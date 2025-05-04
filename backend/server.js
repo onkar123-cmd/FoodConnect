@@ -32,7 +32,7 @@ app.use("/api/admin",adminRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 
-app.get("/",(req,res)=>{
+app.get("https://food-connect-backend.vercel.app",(req,res)=>{
     res.send("API Working")
 })
 
