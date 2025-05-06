@@ -14,11 +14,11 @@ const app=express()
 const port=process.env.PORT || 4000
 
 // Allow multiple origin
-const allowedOrigins=['https://food-connect-frontend.vercel.app']
+const allowedOrigins=['https://foodconnect-frontend.onrender.com']
 
 // middleware
 app.use(express.json())
-app.use(cors({origin: '*', credentials: true})) // {origin: allowedOrigins, credentials: true}
+app.use(cors({origin: allowedOrigins, credentials: true})) // {origin: allowedOrigins, credentials: true}
 
 // db connection
 connectDB();
